@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google Doodle Block Breaker - Play Free Online Unblocked | No Download</title>
+    <meta name="description" content="Play Google Doodle Block Breaker online for free. Bounce the ball, smash blocks, and chase the high score. The best block breaker game — no downloads, plays instantly in your browser.">
+    <meta name="keywords" content="google doodle block breaker, block breaker game, google block breaker, block breaker unblocked, google doodle games, block breaker online, block breaker free, breakout game, google doodle block breaker unblocked, block breaker no download">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="game">
+    <meta property="og:title" content="Google Doodle Block Breaker - Play Free Online Unblocked">
+    <meta property="og:description" content="Play Google Doodle Block Breaker online for free. Smash blocks, grab power-ups, and beat every level — no downloads, no installs.">
+    <meta property="og:url" content="https://google-doodle-block-breaker.github.io/Google-Doodle-Block-Breaker/">
+    <meta property="og:image" content="https://gameriz.com/games/google-block-breaker/thumb_1.png">
+    <meta property="og:site_name" content="Gameriz">
+
+    <link rel="canonical" href="https://google-doodle-block-breaker.github.io/Google-Doodle-Block-Breaker/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Google Doodle Block Breaker",
+        "url": "https://google-doodle-block-breaker.github.io/Google-Doodle-Block-Breaker/",
+        "description": "Block Breaker is a classic Google Doodle arcade game where you use a paddle to bounce a ball and destroy blocks. Simple to play, difficult to master.",
+        "image": "https://gameriz.com/games/google-block-breaker/thumb_1.png",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "gamePlatform": ["Web Browser", "Desktop", "Mobile"],
+        "genre": ["Arcade", "Breakout", "Casual"],
+        "isFamilyFriendly": true,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gameriz",
+            "url": "https://gameriz.com"
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Google Doodle Block Breaker?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Google Doodle Block Breaker is a classic arcade game originally featured as a Google Doodle. Use your paddle to bounce a ball and destroy blocks above. Each block you break rewards you with points, and the further you progress the faster and more challenging it gets."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Google Doodle Block Breaker free to play?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Google Doodle Block Breaker is 100% free to play online. No registration, no payment, and no downloads required — just open your browser and start playing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I play Google Doodle Block Breaker unblocked at school?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Block Breaker is an HTML5 browser game that works on most school and work networks without restrictions. No plugins or installs needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I get a high score in Block Breaker?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aim for power-ups that drop from blocks — they can make your paddle bigger or give you multiple balls. Hit the ball with different parts of your paddle to change its trajectory and target hard-to-reach blocks. Stay focused as the speed increases with each level."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #1a1a2e;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #2a2a4a;
+        }
+        .header h1 { font-size: 1.2rem; color: #fff; }
+        .header a { color: #5b8cff; text-decoration: none; font-size: 0.9rem; }
+        .header a:hover { text-decoration: underline; }
+
+        .main {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .game-area { flex: 1; min-width: 0; }
+        .game-frame {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+            border: 2px solid #2a2a4a;
+        }
+        .game-frame iframe { width: 100%; height: 100%; border: none; }
+
+        .game-info {
+            margin-top: 16px;
+            padding: 16px;
+            background: #1a1a2e;
+            border-radius: 10px;
+        }
+        .game-info h2 { font-size: 1.1rem; margin-bottom: 8px; color: #fff; }
+        .game-info h3 { font-size: 0.95rem; margin: 14px 0 6px; color: #ddd; }
+        .game-info p { font-size: 0.9rem; line-height: 1.6; color: #aaa; }
+        .game-info ul { margin: 8px 0; padding-left: 20px; }
+        .game-info li { font-size: 0.9rem; line-height: 1.6; color: #aaa; margin-bottom: 4px; }
+
+        .play-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 28px;
+            background: #5b8cff;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .play-btn:hover { background: #4a7aee; }
+
+        .sidebar { width: 280px; flex-shrink: 0; }
+        .sidebar h2 { font-size: 1rem; margin-bottom: 12px; color: #fff; }
+        .sidebar-games { display: flex; flex-direction: column; gap: 10px; }
+        .sidebar-game {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            background: #1a1a2e;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: background 0.2s;
+        }
+        .sidebar-game:hover { background: #252545; }
+        .sidebar-game img { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; }
+        .sidebar-game .game-name { font-size: 0.85rem; font-weight: 600; }
+        .sidebar-game .game-tag { font-size: 0.75rem; color: #888; margin-top: 2px; }
+
+        .more-games-btn {
+            display: block;
+            text-align: center;
+            margin-top: 14px;
+            padding: 10px;
+            background: #5b8cff;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .more-games-btn:hover { background: #4a7aee; }
+
+        @media (max-width: 768px) {
+            .main { flex-direction: column; padding: 10px; }
+            .sidebar { width: 100%; }
+            .sidebar-games { flex-direction: row; flex-wrap: wrap; }
+            .sidebar-game { flex: 0 0 calc(50% - 5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Google Doodle Block Breaker - Play Online Free</h1>
+        <a href="https://gameriz.com/" rel="noopener">Gameriz - Free Online Games</a>
+    </header>
+
+    <div class="main">
+        <div class="game-area">
+            <div class="game-frame">
+                <iframe
+                    src="https://gameriz.com/games/google-block-breaker/"
+                    title="Google Doodle Block Breaker - Play Free Online"
+                    scrolling="no"
+                    style="overflow:hidden"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="game-info">
+                <h2>What Is Google Doodle Block Breaker?</h2>
+                <p>
+                    <strong>Block Breaker</strong> is a Google Doodle game that's easy to play but difficult to master. The premise is simple: use your paddle to bounce a ball and destroy blocks above. Each block you break rewards you with points, and the more blocks you clear in a single level, the closer you get to achieving victory. What makes Block Breaker unique is its vibrant design and fluid animations, which feel polished and engaging.
+                </p>
+
+                <h3>Why Play Block Breaker?</h3>
+                <ul>
+                    <li><strong>Simple and Addictive Gameplay</strong> — With straightforward mechanics, the game is perfect for beginners and seasoned players alike.</li>
+                    <li><strong>No Downloads Required</strong> — The game runs directly in your browser with no extra setup.</li>
+                    <li><strong>Challenging Levels</strong> — The further you progress, the more complex the layouts and the faster the ball moves, testing your reflexes and strategy.</li>
+                </ul>
+
+                <h3>Controls</h3>
+                <ul>
+                    <li><strong>Mouse / Touch</strong> — Move the paddle left and right</li>
+                    <li><strong>Click / Tap</strong> — Launch the ball</li>
+                </ul>
+
+                <a href="https://gameriz.com/game/google-block-breaker/" class="play-btn">Play Block Breaker on Gameriz</a>
+
+                <h3>Tips for Winning at Block Breaker</h3>
+                <p>
+                    <strong>Aim for Power-ups:</strong> Some blocks drop power-ups that can make your paddle bigger, give you multiple balls, or provide other useful boosts. Grab them whenever possible!
+                </p>
+                <p>
+                    <strong>Stay Focused:</strong> The speed increases as you clear levels, so keep your eyes on the ball and anticipate its movement.
+                </p>
+                <p>
+                    <strong>Positioning Matters:</strong> Hitting the ball with different parts of your paddle changes its trajectory — use this to your advantage to target hard-to-reach blocks.
+                </p>
+
+                <h3>Play More Unblocked Games</h3>
+                <p>
+                    Put your reflexes to the test, smash those blocks, and aim for the high score. Looking for more games like Block Breaker? Check out our full collection of free browser games on Gameriz — from racing to shooters, puzzles to idle clickers, all playable instantly with no downloads.
+                </p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>More Free Games</h2>
+            <div class="sidebar-games">
+
+                <a href="https://gameriz.com/game/coreball/" class="sidebar-game">
+                    <img src="https://gameriz.com/games/coreball/thumb_1.png" alt="Coreball" loading="lazy">
+                    <div>
+                        <div class="game-name">Coreball</div>
+                        <div class="game-tag">Arcade</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/drive-mad-unblocked/" class="sidebar-game">
+                    <img src="https://gameriz.com/games/drive-mad-unblocked/thumb_1.png" alt="Drive Mad" loading="lazy">
+                    <div>
+                        <div class="game-name">Drive Mad</div>
+                        <div class="game-tag">Racing</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/blacktop-police-chase/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/blacktop-police-chase.png" alt="Blacktop Police Chase" loading="lazy">
+                    <div>
+                        <div class="game-name">Blacktop Police Chase</div>
+                        <div class="game-tag">Racing</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/tiny-fishing-2025-browser-fishing-game/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Tiny-Fishing-2025.png" alt="Tiny Fishing" loading="lazy">
+                    <div>
+                        <div class="game-name">Tiny Fishing</div>
+                        <div class="game-tag">Casual</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/cluster-rush-parkour-on-trucks/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/cluster-rush.jpg" alt="Cluster Rush" loading="lazy">
+                    <div>
+                        <div class="game-name">Cluster Rush</div>
+                        <div class="game-tag">Action</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/eggy-car-unblocked/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Eggy-Car.jpg" alt="Eggy Car" loading="lazy">
+                    <div>
+                        <div class="game-name">Eggy Car</div>
+                        <div class="game-tag">Racing</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/superhot-unblocked/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Superhot-Unblocked.jpg" alt="SUPERHOT" loading="lazy">
+                    <div>
+                        <div class="game-name">SUPERHOT</div>
+                        <div class="game-tag">Shooter</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/house-of-hazards/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/House-Of-Hazards.jpg" alt="House of Hazards" loading="lazy">
+                    <div>
+                        <div class="game-name">House of Hazards</div>
+                        <div class="game-tag">2 Player</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/tanuki-sunset/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Tanuki-Sunset.jpg" alt="Tanuki Sunset" loading="lazy">
+                    <div>
+                        <div class="game-name">Tanuki Sunset</div>
+                        <div class="game-tag">Racing</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/drift-boss/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Drift-Boss.png" alt="Drift Boss" loading="lazy">
+                    <div>
+                        <div class="game-name">Drift Boss</div>
+                        <div class="game-tag">Racing</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/big-shot-boxing/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Big-Shot-Boxing.jpg" alt="Big Shot Boxing" loading="lazy">
+                    <div>
+                        <div class="game-name">Big Shot Boxing</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/a-small-world-cup/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/A-Small-World-Cup.png" alt="A Small World Cup" loading="lazy">
+                    <div>
+                        <div class="game-name">A Small World Cup</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/volley-random/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Volley-Random.png" alt="Volley Random" loading="lazy">
+                    <div>
+                        <div class="game-name">Volley Random</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/super-liquid-soccer/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/super-liquid-soccer-5.jpg" alt="Super Liquid Soccer" loading="lazy">
+                    <div>
+                        <div class="game-name">Super Liquid Soccer</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/2-minute-football-unblocked/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/2-Minute-Football-Unblocked-2.png" alt="2 Minute Football" loading="lazy">
+                    <div>
+                        <div class="game-name">2 Minute Football</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/football-legends/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Football-Legends.jpg" alt="Football Legends" loading="lazy">
+                    <div>
+                        <div class="game-name">Football Legends</div>
+                        <div class="game-tag">Sports</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/time-shooter/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/Time-Shooter.jpg" alt="Time Shooter" loading="lazy">
+                    <div>
+                        <div class="game-name">Time Shooter</div>
+                        <div class="game-tag">Shooter</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/crazy-cattle-3d/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/crazy-cattle-3d.png" alt="Crazy Cattle 3D" loading="lazy">
+                    <div>
+                        <div class="game-name">Crazy Cattle 3D</div>
+                        <div class="game-tag">Action</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/iron-snout/" class="sidebar-game">
+                    <img src="https://gameriz.com/Thumbnails/Games/IRONSNOUT.jpg" alt="Iron Snout" loading="lazy">
+                    <div>
+                        <div class="game-name">Iron Snout</div>
+                        <div class="game-tag">Action</div>
+                    </div>
+                </a>
+
+                <a href="https://gameriz.com/game/google-block-breaker/" class="sidebar-game">
+                    <img src="https://gameriz.com/games/google-block-breaker/thumb_1.png" alt="Block Breaker" loading="lazy">
+                    <div>
+                        <div class="game-name">Block Breaker</div>
+                        <div class="game-tag">Arcade</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <a href="https://gameriz.com/" class="more-games-btn">
+                Play More Free Games on Gameriz
+            </a>
+        </aside>
+    </div>
+
+</body>
+</html>
